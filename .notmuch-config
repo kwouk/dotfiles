@@ -1,0 +1,14 @@
+[database]
+path=/home/kwouk/.local/share/email
+[user]
+name=Kris Wouk
+primary_email=kris@wouk.me
+[new]
+tags=unread;inbox;
+ignore=
+[search]
+exclude_tags=deleted;spam;
+[maildir]
+synchronize_flags=true
+[crypto]
+gpg_path=gpg
