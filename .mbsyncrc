@@ -8,8 +8,8 @@ CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 MaildirStore fastmail-local
 Subfolders Verbatim
-Path ~/.local/share/email/fastmail/
-INBOX ~/.local/share/email/fastmail/INBOX
+Path ~/mail/fastmail/
+INBOX ~/mail/fastmail/INBOX
 Flatten .
 
 Channel fastmail

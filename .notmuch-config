@@ -1,5 +1,5 @@
 [database]
-path=/home/kwouk/.local/share/email
+path=/home/kwouk/mail
 [user]
 name=Kris Wouk
 primary_email=kris@wouk.me
