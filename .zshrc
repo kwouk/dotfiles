@@ -114,3 +114,5 @@ export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin:$HOME/.config/emacs/bin
 mdwc() {
     multimarkdown < "$1" | w3m -dump -T text/html | wc -w
 }
+
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
