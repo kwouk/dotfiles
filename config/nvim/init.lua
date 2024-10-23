@@ -327,6 +327,7 @@ require("lazy").setup({
 		config = function()
 			require("telekasten").setup({
 				home = vim.fn.expand("~/Nextcloud/Notes"),
+				template_new_note = vim.fn.expand("~/.note-templates/new_note"),
 			})
 
 			-- Launch panel if nothing is typed after <leader>z
@@ -347,6 +348,23 @@ require("lazy").setup({
 		end,
 	},
 
+	{
+		"alexghergh/nvim-tmux-navigation",
+		config = function()
+			local nvim_tmux_nav = require("nvim-tmux-navigation")
+
+			nvim_tmux_nav.setup({
+				disable_when_zoomed = true, -- defaults to false
+			})
+
+			vim.keymap.set("n", "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft)
+			vim.keymap.set("n", "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
+			vim.keymap.set("n", "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp)
+			vim.keymap.set("n", "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
+			vim.keymap.set("n", "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
+			vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
+		end,
+	},
 	{
 		"tadmccorkle/markdown.nvim",
 		ft = "markdown", -- or 'event = "VeryLazy"'
@@ -373,6 +391,18 @@ require("lazy").setup({
 		keys = {
 			{ "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 		},
+	},
+	{
+		"stevearc/oil.nvim",
+		---@module 'oil'
+		---@type oil.SetupOpts
+		opts = {},
+		-- Optional dependencies
+		dependencies = { { "echasnovski/mini.icons", opts = {} } },
+		keys = {
+			{ "-", "<cmd>Oil<cr>", desc = "Oil" },
+		},
+		-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
 	},
 
 	-- LSP Plugins
