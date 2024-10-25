@@ -14,11 +14,6 @@ vim.g.have_nerd_font = true
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.smartindent = true
-
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -669,9 +664,7 @@ require("lazy").setup({
 				}
 			end,
 			formatters_by_ft = {
-				html = { "prettier" },
 				lua = { "stylua" },
-				go = { "goimports", "gofumpt" },
 				-- Conform can also run multiple formatters sequentially
 				-- python = { "isort", "black" },
 				--
