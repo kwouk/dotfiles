@@ -102,9 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim=nvim
 alias ls=eza
 alias t=todo.sh
+
+export EDTIOR=nvim
 
 export TODOTXT_DEFAULT_ACTION=ls
 
