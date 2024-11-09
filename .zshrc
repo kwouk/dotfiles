@@ -109,14 +109,12 @@ export EDTIOR=nvim
 
 export TODOTXT_DEFAULT_ACTION=ls
 
-export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin:$HOME/.config/emacs/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin
 
 # word count for non-markup words in markdown files
 mdwc() {
     multimarkdown < "$1" | w3m -dump -T text/html | wc -w
 }
-
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
