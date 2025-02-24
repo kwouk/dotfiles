@@ -70,7 +70,7 @@ ZSH_THEME="dst"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,10 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls=eza
 alias t=todo.sh
 
-export EDTIOR=nvim
+export EDTIOR=vim
 
 export TODOTXT_DEFAULT_ACTION=ls
 
