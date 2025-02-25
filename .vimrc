@@ -47,6 +47,7 @@ set wildmenu
 
 " use the mouse
 set mouse=a
+set clipboard+=unnamedplus
 
 " no backups, no swap
 set noswapfile

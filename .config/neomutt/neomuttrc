@@ -4,7 +4,7 @@ set realname = "Kris Wouk"
 
 set mbox_type = Maildir
 set folder = "~/mail/fastmail"
-set editor= "nvim +':set textwidth=0' +':set wrapmargin=0' +':set wrap' +':set linebreak'"
+set editor= "vim +':set textwidth=0' +':set wrapmargin=0' +':set wrap' +':set linebreak'"
 
 set sendmail = "msmtp -a fastmail"
 
