@@ -60,7 +60,9 @@ set autoread
 
 set ruler
 
-" file types
+" file types and encodings
+set encoding=utf8
+set ffs=unix,dos,mac
 
 "markdown
 au BufNewFile,BufRead *.md setlocal linebreak
