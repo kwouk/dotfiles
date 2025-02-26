@@ -98,16 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
-#
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias t=todo.sh
+alias syncmail="mbsync -a && notmuch new"
 
 export EDTIOR=vim
 
 export TODOTXT_DEFAULT_ACTION=ls
 
+export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin
 
 # word count for non-markup words in markdown files
