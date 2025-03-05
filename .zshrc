@@ -106,6 +106,7 @@ alias t=todo.sh
 alias syncmail="mbsync -a && notmuch new"
 
 export EDTIOR=vim
+export TERM=xterm-256color
 
 export TODOTXT_DEFAULT_ACTION=ls
 
