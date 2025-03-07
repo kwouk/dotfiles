@@ -3,8 +3,6 @@ filetype plugin indent on
 
 set number
 syntax enable
-set background=dark
-colorscheme retrobox
 
 " basic editor settings (overridden per-file)
 set wrap
