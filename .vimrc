@@ -17,6 +17,9 @@ set expandtab
 set autoindent
 set smartindent
 
+set cursorline
+:highlight Cursorline cterm=bold ctermbg=black
+
 " search
 set hlsearch
 set incsearch
