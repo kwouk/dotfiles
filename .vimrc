@@ -9,6 +9,8 @@ set wrap
 set textwidth=80
 set formatoptions=qrn1
 
+set showmatch
+
 set shiftwidth=4
 set softtabstop=4
 set smarttab
@@ -43,8 +45,9 @@ map k gk
 map j gj
 
 " better built-in search
-set path+=**
+" set path+=**
 set wildmenu
+set wildignorecase
 
 " use the mouse
 set mouse=a
